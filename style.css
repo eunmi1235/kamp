@@ -350,13 +350,7 @@ font-family: 'dotum',sans-serif; margin-top: -5px;}
 text-align: center;
 }
 
-.rr {max-width: 1000px; min-width: 500px; margin: 0 auto;padding-top: 210px; cursor: pointer;}
-.rr2 {max-width: 1000px; min-width: 500px; margin: 0 auto; padding-left: 50px; padding-top: 250px;}
-.rr3 {max-width: 1000px; min-width: 500px; margin: 0 auto; padding-left: 135px; padding-top: 240px;}
-.rr4 {max-width: 1000px; min-width: 500px; margin: 0 auto; padding-left: 135px; padding-top: 230px;}
-.rr5 {max-width: 1000px; min-width: 500px; margin: 0 auto; padding-left: 135px; padding-top: 250px;}
-.rr6 {max-width: 1000px; min-width: 500px; margin: 0 auto; padding-left: 135px; padding-top: 240px;}
-
+.rr {max-width: 1000px; min-width: 500px; margin:0 auto; cursor: pointer; text-align:center; height: 100%; padding-top: 265px;}
 
 .mln_sec_color1 {background: url(images/m_01.jpg) no-repeat center center fixed;
   -ms-background-size: cover;
