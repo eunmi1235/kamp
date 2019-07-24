@@ -43,53 +43,46 @@ var $button = $.backToTop({theme: 'fawesome'});
 
 </script>
 </body>
-	<script>
-$(document).ready(function() {
-
-	// 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
-	var floatPosition = parseInt($("#floatMenu").css('top'));
-	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
-
-	$(window).scroll(function() {
-		// 현재 스크롤 위치를 가져온다.
-		var scrollTop = $(window).scrollTop();
-		var newPosition = scrollTop + floatPosition + "px";
-
-		/* 애니메이션 없이 바로 따라감
-		 $("#floatMenu").css('top', newPosition);
-		 */
-
-		$("#floatMenu").stop().animate({
-			"top" : newPosition
-		}, 500);
-
-	}).scroll();
-
-});
-</script>
 <div id="wrap">
  	 <div id="bg"><img src="images/sub.jpg" width="100%;" height="300px;"></div>
 
 	 <div class="i">
          <div class="main">	
              
-             <div class="logo"><a href=index.html><img src="images/l.png"></a></div>
+             <div class="logo"><a href="../html/index.html"><img src="images/l.png"></a></div>
          
 			<div class="utility">
 				  <ul>
-					  <a href="https://eunmi1235.github.io/portfolio/><li>포트폴리오</li></a>
+					  <a href="#" target="_blank"><li>장바구니</li></a>
 					  <a href="#"><li>마이페이지</li></a>
 					  <a href="#"><li>로그인</li></a>
-				  <A href="index.html"><li>홈</li></A>
+				  <a href="../html/index.html"><li>홈</li></a>
 				 </ul>
                     
                 <div class="clear"></div>
                 
-              <header class="header-main">
+<header class="header-main">
     <div class="page-wrapper">
       <button class="button-nav-toggle"><span class="icon">&#9776;</span> Menu</button>
     </div>
-  </header>
+    	<script>
+            $(document).ready(function() {
+
+                // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+                var floatPosition = parseInt($("#floatMenu").css('top'));
+                // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+                $(window).scroll(function() {// 현재 스크롤 위치를 가져온다.
+                var scrollTop = $(window).scrollTop();
+                var newPosition = scrollTop + floatPosition + "px";
+
+                /* 애니메이션 없이 바로 따라감 $("#floatMenu").css('top', newPosition); */
+
+                $("#floatMenu").stop().animate({"top" : newPosition}, 500);
+                }).scroll();
+
+                });
+        </script>
+</header>
             </div>
          </div>         
 	 </div>
